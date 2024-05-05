@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      lang="pt-br"> 
+<h:head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questionário de Literatura</title>
+    <link rel="stylesheet" href="../resources/css/global.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css"
+	integrity="sha512-72McA95q/YhjwmWFMGe8RI3aZIMCTJWPBbV8iQY3jy1z9+bi6+jHnERuNrDPo/WGYEzzNs4WdHNyyEr/yXJ9pA=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<ui:insert name="head" />
+</h:head>
+<body>
+
+	<div class="top-bar">
+		<h:link id="home-link" outcome="/sistema/views/acesso" styleClass="home-TopBar layout-topbar-icon"> 
+        	<h:panelGroup style="display: grid;">
+	            <i class="home-TopBar-Branco fa fa-home" style="margin: auto;"/>
+	            <span class="home-TopBar-Branco" style="font-size: 18px;">Tela Inicial</span>
+            </h:panelGroup>
+        </h:link>
+	</div>
+	
+	<script src="../resources/js/primefaces-auxiliar.js"></script>
+	
+	<ui:insert name="conteudo" />
+	
+	
+</body>
+</html>
